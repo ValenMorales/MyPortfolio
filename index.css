@@ -6,6 +6,12 @@
     vertical-align: baseline;
     text-decoration: none;
     
+
+}
+
+::selection{
+    background-color: black;
+    color:white;
 }
 a{
     display: block;
@@ -82,12 +88,7 @@ body{
    align-items: center;
    padding: 1em 2em;
 }
-.header .h1 {
-}
-.header .h1 .a {
-}
-.header .nav{
-}
+
 .header  .ul{
     display: flex;
     flex-flow: row wrap;
@@ -153,11 +154,16 @@ section .ul .a:hover{
     font-size: 1.2em;
     animation: aparecer1 2s ease 1 both;
 }
-.section .h1{}
+
+
+
 .section .h2 {
     font-family: var(--tipo-titular);
     font-size: 5em;
     font-weight: 800;
+   
+    
+    
 }
 .section .h3 {
     font-family: var(--tipo-titular);
@@ -245,7 +251,7 @@ align-items: center;
 .about  .li{
     margin: 0 1em;
 }
-.about  .a{}
+
 .about .svg{
     width: 3em;
     height: 3em;
@@ -258,9 +264,7 @@ align-items: center;
     position:relative;
   
 }
-.footer.span{
 
-}
 
 @keyframes aparecer1{
     from{
@@ -271,4 +275,107 @@ align-items: center;
         opacity: 1;
         transform: translateY(0%);
     }
+}
+
+.basic {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 5%;
+    
+  }
+  
+  .basic h2 {
+    order: 1; 
+    font-size: 50px;
+    margin:50px;
+    
+  }
+  
+  .basic p {
+    order: 2; 
+    text-align: left; 
+    font-size: 20px;
+
+  }
+  
+
+#education{
+    min-height: 100vh;
+    display:grid;
+    place-items: center;
+}
+
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display:grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slider-track{
+    display: flex;
+   width: calc(250px * 18);
+   animation:scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    text-align: center;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+   
+}
+
+.slide p {
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: transform 0.5s;
+    font-size: 15px;
+}
+
+.slide:hover{
+    cursor: pointer;
+  /*  transform: translateZ(20px); */
+
+}
+
+.slider::before, .slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1), 0%,
+    rgba(255,255,255,0), 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before{
+   left: 0;
+   top:0;
+}
+
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
 }
