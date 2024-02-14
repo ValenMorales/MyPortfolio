@@ -236,8 +236,7 @@ margin: 0 0 1rem;
     max-width: 40em;
     text-align: left;
     margin-bottom: 1.5em;
-    font-size: 1.2em; 
-
+    font-size: 1.5em; 
 }
 .about .rrss{
     width: 100%;
@@ -256,6 +255,10 @@ align-items: center;
     width: 3em;
     height: 3em;
     
+}
+
+svg:hover{
+    cursor:pointer;
 }
 
 .footer{
@@ -283,9 +286,10 @@ align-items: center;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 5%;
-    
+    margin-top: 5rem;
   }
+
+
   
   .basic h2 {
     order: 1; 
@@ -297,8 +301,9 @@ align-items: center;
   .basic p {
     order: 2; 
     text-align: left; 
-    font-size: 20px;
-
+    font-size: 18px;
+    font-family:  Arial, sans-serif;
+    
   }
   
 
@@ -379,3 +384,4 @@ align-items: center;
     top: 0;
     transform: rotateZ(180deg);
 }
+
