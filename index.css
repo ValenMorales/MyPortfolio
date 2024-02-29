@@ -229,15 +229,15 @@ main::before {
 }
 
 .grid article:nth-child(3):hover {
-  cursor: url("assets/pizza.png"), auto;
+  cursor: url("./assets/pizza.png"), auto;
 }
 
 .grid article:nth-child(2):hover {
-  cursor: url("assets/servicio-al-cliente.png"), auto;
+  cursor: url("./assets/servicio-al-cliente.png"), auto;
 }
 
 .grid article:nth-child(1):hover {
-  cursor: url("assets/metodo-de-pago.png"), auto;
+  cursor: url("./assets/metodo-de-pago.png"), auto;
 }
 
 .article p {
@@ -530,7 +530,7 @@ color:inherit;
 }
 
 .content-carrousel div:nth-child(1) {
-  background-image: url(/assets/deep-learning.png);
+  background-image: url(./assets/deep-learning.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -538,35 +538,35 @@ color:inherit;
   transform: rotateY(60deg) translateZ(350px);
 }
 .content-carrousel div:nth-child(2) {
-  background: url(/assets/coming-soon-2070393_640.jpg);
+  background: url(./assets/coming-soon-2070393_640.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotateY(120deg) translateZ(300px);
 }
 .content-carrousel div:nth-child(3) {
-  background: url(/assets/machine-learning.png);
+  background: url(./assets/machine-learning.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotateY(180deg) translateZ(300px);
 }
 .content-carrousel div:nth-child(4) {
-  background: url(/assets/matlab-fundamentals.png);
+  background: url(./assets/matlab-fundamentals.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotateY(240deg) translateZ(300px);
 }
 .content-carrousel div:nth-child(5) {
-  background: url(/assets/deep-learning.png);
+  background: url(./assets/deep-learning.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotateY(300deg) translateZ(300px);
 }
 .content-carrousel div:nth-child(6) {
-  background: url(/assets/coming-soon-2070393_640.jpg);
+  background: url(./assets/coming-soon-2070393_640.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
