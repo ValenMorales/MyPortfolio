@@ -1,163 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="normalize.css">
-<link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
-    
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="h1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"
+          />
+        </svg>
+      </h1>
+      <nav class="nav">
+        <ul class="ul">
+          <li class="li">
+            <a href="#about" title="about" class="a">ABOUT ME</a>
+          </li>
+          <li class="li">
+            <a href="#proyectos" title="projects" class="a">PROJECTS</a>
+          </li>
+          <li class="li">
+            <a href="#experiencia" title="blog" class="a">EXPERIENCE</a>
+          </li>
+          <li class="li">
+            <a href="#educacion" title="blog" class="a">EDUCATION</a>
+          </li>
+          <li class="li">
+            <a href="#contact" title="blog" class="a">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-   <header class="header">
-    <h1 class="h1">  
-        <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
-          </svg>
-     </h1>
-        <nav class="nav">
-            <ul class="ul">
-                <li class="li"><a href="#about" title="about" class="a">CONTACT</a></li>
-                <li class="li"><a href="#about" title="about" class="a">ABOUT ME</a></li>
-                <li class="li"><a href="#projects" title="projects" class="a">PROYECTS</a></li>
-                <li class="li"><a href="#" title="blog" class="a">HOME</a></li>
-                <li class="li"><a href="#education" title="blog" class="a">EDUCATION</a></li>
+    <main class="main">
+      <section class="section info">
+        <h2 class="h2">Valentina Morales</h2>
+        <h3 class="h3">Software Developer</h3>
 
-                
-            </ul>
-        </nav>
- 
-   </header>
-   <main class="main">
+        <ul class="ul">
+          <li class="li">
+            <a href="https://github.com/ValenMorales" class="a" title="GitHub" target="_blank"
+              >Visit GitHub</a
+            >
+          </li>
+          <li class="li">
+            <a
+              href="https://www.linkedin.com/in/valentina-morales-sanchez-a1916a1b6/"
+              class="a"
+              title="Linkedln"
+                target="_blank"
+              >Visit Linkedln</a
+            >
+          </li>
+        </ul>
+      </section>
 
-        <section class="section info">
-            <h2 class="h2">Valentina Morales</h2>
-            <h3 class="h3">Software Developer</h3>
-
-            <ul class="ul">
-                <li class="li">
-                    <a href="https://github.com/ValenMorales" class="a" title="GitHub">Visit GitHub</a></li>
-                <li class="li">
-                    <a href="#" class="a" title="Linkedln">Visit Linkedln</a></li>
-            </ul>
-        </section>
-    <section class="section projects" id="projects">
-        <h2 class="h2">Projects</h2>
-        <p class="p">here there is some of my projects in different lenguajes, enjoy it </p>
-        <div class="grid">
-            <article class="article">
-                <a href="#" class="a" title="project1"></a>
-                <figure class="figure">
-                    <img src="assets/promotion.jpg" alt="Image" class="img"> 
-                </figure>
-                <h4 class="h4">Project name</h4>
-            </article>
-            <article class="article">
-                <a href="#" class="a" title="project1"></a>
-                <figure class="figure">
-                    <img src="assets/social-media.jpg" alt="Image" class="img">
-                </figure>
-                <h4 class="h4">Project name</h4>
-            </article>
-        </div>
-    </section>
-    <section class="section about" id="about">
-        <h2 class="h2">About me </h2>
-        <p class="p">Mi nombre es Valentina Morales Sanchez, soy una estudiante de la carrera de ingenieria en sistemas en la universidad Autonoma de Manizales </p>
-        <p class="p">Estudiante de ingeniería en sistemas con un profundo interés en el desarrollo de software. Mi dedicación a proyectos personales y académicos ha fortalecido mis habilidades en programación, abarcando tanto el frontend como el backend.</p>
-        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam dolore provident corporis rerum consequuntur laborum cumque hic atque consequatur fuga sapiente cum assumenda ea impedit, suscipit nisi alias quam.</p>
+      <section class="section about" id="about">
+        <h2 class="h2">ABOUT ME</h2>
+        <p class="p">
+            Appassionate about technology and software development, I have
+            strengthened my programming skills, covering both the frontend and
+            backend. I seek to contribute significantly to challenging projects.
+        </p>
+        <p class="p">
+            I am a proactive person, with communication and teamwork skills. I
+            like to learn and face new challenges.
+        </p>
+        <p class="p">
+            I have a B1 level in the English language, with strong reading and
+            listening comprehension skills.
+        </p>
         <ul class="rrss">
           <li class="li">
-            <a href="#" class="a" title="nombre" rel="noopener noreferrer" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
+            <a
+              href="cvv.pdf"
+              class="button-a"
+              title="nombre"
+              rel="noopener noreferrer"
+                target="_blank"
+            >
+            
+             View  CV</a
+            >
+          </li>
+          <li class="li">
+            <a
+              href="https://github.com/ValenMorales"
+              class="a"
+              title="nombre"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
             </a>
           </li>
           <li class="li">
-            <a href="#" class="a" title="nombre" rel="noopener noreferrer" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                  </svg>
+            <a
+              href="https://www.linkedin.com/in/valentina-morales-sanchez-a1916a1b6/"
+              class="a"
+              title="nombre"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                />
+              </svg>
             </a>
           </li>
           <li class="li">
-            <a href="#" class="a" title="nombre" rel="noopener noreferrer" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
-                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
-                  </svg>
+            <a
+              href="#"
+              class="a"
+              title="nombre"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="svg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"
+                />
+                <path
+                  d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"
+                />
+              </svg>
             </a>
           </li>
         </ul>
-    </section>
-    <section id="education">
-        <div class="basic">
-            <h2>Education</h2>
-        <p>Here there is some of the curses I have did, I love study about machine learning and deep learning  
-      <br>  I also have did some course about frontend and backend development using frameworks</p> 
-        </div>
-    <div class="slider">
-        <div class="slider-track">
+
+        <div class="slider-">
+          <div class="slider-track">
             <div class="slide">
-                <p>Machine learning with matlab</p>
+              <img src="assets/html-5.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/css-3.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-oreja-96.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/js.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/nodo-js.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-angular-96.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-reaccionar-80.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-viento-de-cola-css-96.png" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="assets/html-5.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/css-3.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-oreja-96.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/js.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/nodo-js.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-angular-96.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-reaccionar-80.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-viento-de-cola-css-96.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/html-5.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/css-3.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-oreja-96.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/js.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/nodo-js.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-angular-96.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/icons8-reaccionar-80.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="experiencia">
+        <h2 class="h2">Experience</h2>
+        <p class="p">
+            Although I have not yet had the opportunity to play a specific role in
+            software engineering, these experiences have strengthened my
+            communication, adaptability, and problem-solving skills.
+        </p>
+        <div class="grid">
+          <article class="article">
+            <h3 class="h3">
+                Customer service advisor</h3>
+
+            <ul>
+              <li>
+                <h4>Company</h4>
+                <p>Comdata Group</p>
+              </li>
+              <li>
+                <h4> Duration
+                </h4>
+                <p>1 year laborado (inicio – fin</p>
+              </li>
+              <li>
+                <h4>Functions</h4>
+                <p>
+                    Answer calls and respond to questions about telephone and
+                    internet services
+                </p>
+              </li>
+              <li>
+                <h4> Tools </h4>
+                <p>
+                    Management of office tools such as excel, word and CRM
+                    applications
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="article">
+            <h3 class="h3">  Telemarketer</h3>
+            <ul>
+              <li>
+                <h4>Company</h4>
+                <p>Konecta Group</p>
+              </li>
+              <li>
+                <h4>Duration</h4>
+                <p>1 año laborado (inicio – fin</p>
+              </li>
+              <li>
+                <h4>Functions</h4>
+                <p>
+                    Call customers to offer improvements in their services, manage
+                    sales and customer records
+                </p>
+              </li>
+              <li>
+                <h4>Tools</h4>
+                <p>
+                    Management of office tools such as excel, word and CRM
+                    applications
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="article">
+            <h3 class="h3">Waitress</h3>
+            <ul>
+              <li>
+                <h4>Company</h4>
+                <p>Pizza's Factory Milan</p>
+              </li>
+              <li>
+                <h4>Duration</h4>
+                <p>1 año laborado (inicio – fin</p>
+              </li>
+              <li>
+                <h4>Functions</h4>
+                <p>
+                    Attend customers, take orders, process transactions, ensure
+                    customer satisfaction
+                </p>
+              </li>
+
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="carrousel-section" id="educacion">
+        <h2>EDUCACION</h2>
+        <p class="p">
+            I am currently studying the sixth semester of my career, however I have
+            taken some courses that have helped me in a complementary way to my
+            growth
+        </p>
+        <div class="content-all">
+          <div class="content-carrousel">
+            <div class="carrousel">
+            
+              <p>
+                <a href="machine_learning.pdf" download="machine_learning" class="enlace">
+                Certificated course of Freecodecamp of -- hours about the basic
+                knowledge of machine learning and its implementation in python
+                <br /> </a>
+                In process since january 2021
+              </p>
+            </div>
+            <div class="carrousel">
+             
+              <p>
+                <a href="matlab_fundamentals.pdf"  download="matlab_fundamentals" class="enlace">Certificated course of MATLAB of -- hours about the basic
+                    knowledge of machine learning and its implementation in MATLAB</a>
+                Realized in january 2021
+              </p>
+            </div>
+            <div class="carrousel">
+          
+              <p>
+                <a href="matlab_fundamentals.pdf" download="matlab_fundamentals"  class="enlace">
+               
+                Certificated course of matlab about the basics, uses and tools of
+                this language <br /></a>
+                Realized in january 2021
+              </p>
+            </div>
+
+            <div class="carrousel">
+            
+              <p>
+                <a href="" class="enlace">
+                Certificated course of Freecodecamp of -- hours about the basic
+                knowledge of amazon cloud services <br />
+                </a>
+                In process since january 2021
+              </p>
+            </div>
+            <div class="carrousel">
+           
+              <p>
+                <a href="" class="enlace">
+                Certificated course of Freecodecamp of -- hours about the basic
+                knowledge of amazon cloud services <br />
+                </a>
+                In process since january 2021
+              </p>
+            </div>
+
+            <div class="carrousel">
+       
+              <p>
+                <a href="" class="enlace">
+                Certificated course of Freecodecamp of -- hours about the basic
+                knowledge of amazon cloud services <br />
+                </a>
+                In process since january 2021
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+<section class="my-projects">
+    <h2>MY PROJECTS</h2>
+    <div class="slider" id="proyectos">
+      
+        <div class="list">
+          <div class="item active">
+            <img src="assets/sockets.png" />
+            <div class="content">
+              <h2>Chat App</h2>
+              <p>
+                Web page of instant messaging, where users can register, log in,
+                search and add friends, create groups and send messages
+              </p>
+              <div class="item-buttons">
+              
+                 
+                <button onclick="redirigir()" class="more">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/codebeaters.png" />
+            <div class="content">
+              <h2>Code-beaters</h2>
+              <p>
+                Web application that allows the creation and solution of
+                programming problems that cover both the topic of algorithmics and
+                sql queries, allowing the execution of code and the history of
+                attempts.
+              </p>
+              <div class="item-buttons">
+                  
+            
+                <button onclick="redirigir()" class="more">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/popular-foods.png" />
+            <div class="content">
+              <h2>Rest food</h2>
+              <p>
+                Frontend design of a mockup of a web page in html and css
+              </p>
+              <div class="item-buttons">
+                  <button onclick="rest_food()"class="project">View Project</button>
+                <button onclick="redirigir()" class="more">Read More </button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/mapa.png" />
+            <div class="content">
+              <h2>Data Structures</h2>
+              <p>
+                Implementation of various data structures in an interactive and
+                visual way using pygame
+              </p>
+              <div class="item-buttons">
+             
+                <button onclick="redirigir()" class="more">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/sharability.png" />
+            <div class="content">
+              <h2>Sharability</h2>
+              <p>
+                Visual interface of a web page that allows the user to share
+                various skills and pay for the teaching of others
+              </p>
+              <div class="item-buttons">
+                <button onclick="sharability()" class="project">View Project</button>
+                <button onclick="redirigir()" class="more">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+          <div class="item active">
+            <img src="assets/sockets.png" />
+            <div class="content">Chat App</div>
+          </div>
+          <div class="item">
+            <img src="assets/codebeaters.png" />
+            <div class="content">Code Beaters</div>
+          </div>
+          <div class="item">
+            <img src="assets/popular-foods.png" />
+            <div class="content">Rest Food</div>
+          </div>
+          <div class="item">
+            <img src="assets/data-structure.jpg" />
+            <div class="content">Data Structure</div>
+          </div>
+          <div class="item">
+            <img src="assets/sharability.png" />
+            <div class="content">Sharability</div>
+          </div>
+        </div>
+      </section>
+      <section class="section-wrapper" id="contact">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">Fill up the form and I will get back to you within 24 hours</h3>
               
             </div>
-            <div class="slide">
-                <p>Deep Learning with matlab</p>
+            <div class="form-wrap">
+                <form action="https://formsubmit.co/valentinams419@gmail.com" method="POST">
+                  
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="fname" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="email" placeholder="Mail">
+                        </div>
+                      
+                        <div class="form-group">
+                            <textarea name="message" id="" placeholder="Write your message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="submit-button">
+                        </div>
+                    </div>
+                  
+                </form>
             </div>
-            <div class="slide">
-                <p>Matlab fundamentals </p>
-            </div>
-            <div class="slide">
-                <p>Html Course </p>
-            </div>
-            <div class="slide">
-               <p>React Native course</p>
-            </div>
-            <div class="slide">
-               <p>Machine learning with Python</p>
-            </div>
-            <div class="slide">
-                
-                <p>Machine learning with matlab</p>
-            </div>
-            <div class="slide">
-                <p>Machine learning with matlab</p>
-            </div>
-            <div class="slide">
-                <p>Deep Learning with matlab</p>
-            </div>
-            <div class="slide">
-                <p>Matlab fundamentals </p>
-            </div>
-            <div class="slide">
-                <p>Html Course </p>
-            </div>
-            <div class="slide">
-               <p>React Native course</p>
-            </div>
-            <div class="slide">
-               <p>Machine learning with Python</p>
-            </div>
-            <div class="slide">
-                
-                <p>Machine learning with matlab</p>
-            </div>
-          
         </div>
     </div>
-    </section>
-</main>
-<footer class="footer">
-    <span class="span">Made by
-        ©Valen
-    </span>
-</footer>
-</body>
+
+</section>
+      
+
+      <script src="app.js"></script>
+    </main>
+    <footer class="footer">
+      <span class="span">Made by ©Valen </span>
+    </footer>
+  </body>
 </html>
