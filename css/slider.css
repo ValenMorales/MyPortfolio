@@ -2,8 +2,8 @@
 
 .slider {
   height: 80vh;
-  width: 90%;
-  margin-left: 4rem;
+  width: 100%;
+
   position: relative;
   justify-content: center;
 }

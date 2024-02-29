@@ -120,6 +120,16 @@ main::before {
   animation: color 4s ease-in-out infinite;
 }
 
+main{
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes color {
   0% {
     background-position: 0% 50%;
@@ -166,7 +176,6 @@ main::before {
 .section {
   width: 100%;
   min-height: 80vh;
-  padding: 2em;
   text-align: center;
   display: flex;
   flex-flow: column wrap;
@@ -186,7 +195,7 @@ main::before {
 }
 
 .info {
-  font-size: 1.6em;
+  font-size: 1.3em;
   animation: aparecer1 2s ease 1 both;
 }
 
@@ -249,6 +258,8 @@ main::before {
   font-weight: 800;
 }
 
+
+
 article ul {
   display: flex;
   flex-direction: column;
@@ -256,10 +267,18 @@ article ul {
   margin: 1em 0;
 }
 
+.projects{
+  margin-left: 5rem;
+}
+
 .projects .p {
   font-size: 1.3em;
   text-align: center;
   margin: 1em 0;
+}
+
+.about {
+  margin-left: 5rem;
 }
 
 .about .p {
@@ -339,6 +358,7 @@ svg:hover {
   color: white;
   margin-top :30rem;
   margin-bottom: 5rem;
+  
 }
 
 .my-projects h2{
@@ -349,7 +369,7 @@ svg:hover {
   text-align: center;
   color: white;
   padding: 0 1rem;
-
+margin-bottom: 2rem;
 }
 
 .slider-track {
@@ -423,6 +443,7 @@ svg:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 5rem;
 }
 
 .carrousel {
@@ -589,6 +610,7 @@ color:inherit;
 .section-wrapper {
   width: 100%;
   padding: 10px;
+  margin-left: 5rem;
 }
 .box-wrapper {
   position: relative;
