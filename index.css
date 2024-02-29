@@ -183,6 +183,7 @@ main{
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
+  
 }
 
 .section .ul {
@@ -198,6 +199,7 @@ main{
 
 .info {
   font-size: 1.3em;
+  margin-left:3rem ;
   animation: aparecer1 2s ease 1 both;
 }
 
@@ -217,18 +219,16 @@ main{
   margin: 0 0 1em;
   font-size: 1.2em;
 }
-.section .grid {
+.grid {
   width: 90%;
-  max-width: 100rem;
   margin: 1em, 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 2em;
 }
 
-.section .article {
+.article {
   width: 100%;
-  min-height: 50vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -270,7 +270,7 @@ article ul {
 }
 
 .projects{
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 
 .projects .p {
@@ -280,7 +280,7 @@ article ul {
 }
 
 .about {
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 
 .about .p {
@@ -446,7 +446,7 @@ margin-bottom: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 
 .carrousel {
@@ -733,9 +733,15 @@ color:inherit;
 
 /* Responsive css */
 @media only screen and (max-width: 767px) {
+
+  .grid{
+    display: flex;
+    flex-direction: column;
+  }
+ 
   .my-projects {
     width: 100%;
-    margin-left: 5rem; 
+    margin-left: 2rem; 
   }
   main{
     overflow-x:visible;
