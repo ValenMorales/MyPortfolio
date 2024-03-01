@@ -108,6 +108,14 @@ main::before {
   width: 100%;
   height: 100%;
   z-index: -1;
+  /* background: linear-gradient(
+    45deg,
+    rgb(73, 0, 75),
+    rgba(30, 0, 44, 0.925),
+    rgb(73, 0, 75),
+    rgb(23, 0, 25)
+  );
+*/
   background: linear-gradient(
     45deg,
     rgba(156, 40, 40, 0.7),
@@ -120,15 +128,14 @@ main::before {
   animation: color 4s ease-in-out infinite;
 }
 
-main{
+main {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    overflow-x: hidden ;
- 
+  overflow-x: hidden;
 }
 
 @keyframes color {
@@ -183,7 +190,6 @@ main{
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
-  
 }
 
 .section .ul {
@@ -199,7 +205,7 @@ main{
 
 .info {
   font-size: 1.3em;
-  margin-left:3rem ;
+  margin-left: 3rem;
   animation: aparecer1 2s ease 1 both;
 }
 
@@ -260,8 +266,6 @@ main{
   font-weight: 800;
 }
 
-
-
 article ul {
   display: flex;
   flex-direction: column;
@@ -269,27 +273,18 @@ article ul {
   margin: 1em 0;
 }
 
-<<<<<<< HEAD
-.projects{
+.projects {
   margin-left: 3rem;
 }
-=======
-
->>>>>>> f7d86e78f85153f389510fcffea21e7f868d1f88
-
 .projects .p {
   font-size: 1.3em;
   text-align: center;
   margin: 1em 0;
 }
 
-<<<<<<< HEAD
 .about {
   margin-left: 3rem;
 }
-=======
->>>>>>> f7d86e78f85153f389510fcffea21e7f868d1f88
-
 .about .p {
   max-width: 40em;
   text-align: center;
@@ -365,13 +360,11 @@ svg:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top :30rem;
+  margin-top: 30rem;
   margin-bottom: 5rem;
-
 }
 
-
-.my-projects h2{
+.my-projects h2 {
   font-size: 3rem;
   display: inline;
   font-family: var(--tipo-titular);
@@ -379,7 +372,7 @@ svg:hover {
   text-align: center;
   color: white;
   padding: 0 1rem;
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .slider-track {
@@ -462,14 +455,14 @@ margin-bottom: 2rem;
   align-items: center;
   color: white;
 }
-.enlace{
+.enlace {
   text-decoration: none;
-color:inherit;
+  color: inherit;
 }
-.enlace:hover{
+.enlace:hover {
   text-decoration: none;
-  color:inherit;
-  background:none;
+  color: inherit;
+  background: none;
 }
 .carrousel-section h2 {
   font-size: 3rem;
@@ -482,7 +475,6 @@ color:inherit;
 
   padding: 0 1rem;
 }
-
 
 .carrousel-section .p {
   font-size: 1.5rem;
@@ -661,13 +653,8 @@ color:inherit;
   float: right;
   padding: 40px 25px 35px 25px;
   border-radius: 0px 30px 30px 0px;
-  background: linear-gradient(
-    45deg,
-    rgba(163, 67, 149, 0.7),
-    rgba(126, 37, 111, 0.7),
-    rgba(72, 21, 81, 0.7)
-  );
-
+  background: transparent;
+  border: 5px solid #ffffff;
 }
 
 .form-fields {
@@ -714,13 +701,13 @@ color:inherit;
   justify-content: center;
   align-items: center;
   box-shadow: none;
-  background-color: purple;
+  background-color: rgb(93, 127, 124);
   color: #fff;
 }
 
 .form-fields .form-group:nth-child(4):hover {
-  background-color: rgb(188, 18, 166);
-  transform: scale(0.9);
+  background-color: rgba(44, 1, 39, 0.654);
+  transform: scale(1.01);
   transition: all 0.5s;
 }
 
@@ -738,22 +725,20 @@ color:inherit;
 
 /* Responsive css */
 @media only screen and (max-width: 767px) {
-
-  .grid{
+  .grid {
     display: flex;
     flex-direction: column;
   }
- 
 
-  .content-carrousel{
+  .content-carrousel {
     perspective: none;
   }
   .my-projects {
     margin-left: 1rem;
     width: 100vw;
   }
-  main{
-    overflow-x:visible;
+  main {
+    overflow-x: visible;
   }
   .box-wrapper {
     width: 100%;
