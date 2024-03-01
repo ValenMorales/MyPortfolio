@@ -250,11 +250,12 @@ main {
 }
 
 .grid article:nth-child(2):hover {
-  cursor: url("./assets/servicio-al-cliente.png"), auto;
+  cursor: url("./assets/metodo-de-pago.png"), auto;
 }
 
 .grid article:nth-child(1):hover {
-  cursor: url("./assets/metodo-de-pago.png"), auto;
+  cursor: url("./assets/servicio-al-cliente.png"), auto;
+
 }
 
 .article p {
