@@ -91,7 +91,9 @@ select {
 }
 
 body {
-  font-family: var(--tipo-principal);
+  font-family: "Space Grotesk";
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 100%;
   min-height: 100vh;
 
@@ -266,6 +268,13 @@ main {
   font-size: 1.2em;
   font-weight: 800;
 }
+.article h3{
+  font-size: 1.7em;
+  font-weight: 800;
+  margin: 1em 0;
+
+}
+
 
 article ul {
   display: flex;
