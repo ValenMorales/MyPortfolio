@@ -60,9 +60,24 @@ function redirigir() {
     window.location.href = "html/projects.html";
   }
 
+  
   function rest_food(){
-    window.location.href = "projects/RestFood/index.html";
+    window.location.href = "https://github.com/ValenMorales/RestFood";
   }
   function sharability(){
-    window.location.href = "projects/sharability/home/index.html";
+    window.location.href = "https://github.com/ValenMorales/practice";
   }
+
+  function codebeaters()
+    {
+        window.location.href = "https://github.com/JustTwoDevs";
+    }
+
+    function chatapp()
+    {	
+        window.location.href = "https://github.com/ValenMorales/chat-app";
+    }
+
+    function datastructures(){
+        window.location.href = "https://github.com/ValenMorales/final-proyect";
+    }
