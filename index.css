@@ -629,6 +629,7 @@ svg:hover {
   margin: auto;
   margin-top: 35px;
   border-radius: 30px;
+  background-color: black;
 }
 .info-wrap {
   width: 35%;
