@@ -425,6 +425,97 @@ article ul {
   margin: 1em 0;
 }
 
+.experience-timeline {
+  width: min(960px, 92%);
+  margin: 1.8rem auto 0;
+  position: relative;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(167, 139, 250, 0.2),
+    rgba(167, 139, 250, 0.6),
+    rgba(167, 139, 250, 0.2)
+  );
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2.1rem;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.2);
+  position: absolute;
+  left: 6px;
+  top: 0.95rem;
+}
+
+.timeline-card {
+  background-color: rgba(18, 26, 44, 0.72);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  text-align: left;
+}
+
+.timeline-meta span {
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+}
+
+.timeline-card h3 {
+  margin-top: 0.45rem;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.timeline-card h4 {
+  margin-top: 0.3rem;
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.timeline-points {
+  margin-top: 0.85rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.timeline-points li {
+  color: var(--text-secondary);
+  line-height: 1.55;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline-points li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--accent-soft);
+  position: absolute;
+  left: 0;
+  top: 0.58rem;
+}
+
 .about {
   margin-left: 0;
 }
@@ -919,6 +1010,14 @@ svg:hover {
 
   .skills-groups {
     grid-template-columns: 1fr;
+  }
+
+  .experience-timeline {
+    width: min(620px, 92%);
+  }
+
+  .timeline-card {
+    padding: 0.9rem;
   }
 
   .grid {
