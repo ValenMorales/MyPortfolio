@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/sections/Header.astro';
+import HeroSection from '../components/sections/HeroSection.astro';
+import AboutSection from '../components/sections/AboutSection.astro';
+import ExperienceSection from '../components/sections/ExperienceSection.astro';
+import EducationSection from '../components/sections/EducationSection.astro';
+import ProjectsSection from '../components/sections/ProjectsSection.astro';
+import ContactSection from '../components/sections/ContactSection.astro';
+import Footer from '../components/sections/Footer.astro';
+import {
+  navLinks,
+  heroData,
+  aboutLead,
+  aboutParagraphs,
+  aboutHighlights,
+  skillsGroups,
+  experienceItems,
+  educationItems,
+  featuredProjects
+} from '../data/home';
+---
+
+<BaseLayout
+  title="Valentina Morales | Software Engineer"
+  description="Portfolio of Valentina Morales, Software Engineer focused on backend development, automation, and integrations."
+  stylesheets={['/css/normalize.css', '/index.css', '/css/slider.css']}
+>
+  <Header links={navLinks} />
+  <main class="main">
+    <HeroSection hero={heroData} />
+    <AboutSection
+      lead={aboutLead}
+      paragraphs={aboutParagraphs}
+      highlights={aboutHighlights}
+      skills={skillsGroups}
+    />
+    <ExperienceSection items={experienceItems} />
+    <EducationSection items={educationItems} />
+    <ProjectsSection items={featuredProjects} />
+    <ContactSection />
+  </main>
+  <Footer />
+
+  <script slot="scripts" is:inline src="/app.js"></script>
+  <script slot="scripts" is:inline type="text/javascript">
+    (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6601b9de3c335fc705b2b7ac' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      };
+      v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
+      v.type = 'text/javascript';
+      s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</BaseLayout>

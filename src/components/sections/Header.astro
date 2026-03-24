@@ -1,0 +1,27 @@
+---
+import type { NavLink } from '../../data/home';
+
+interface Props {
+  brandLabel?: string;
+  links: NavLink[];
+}
+
+const { brandLabel = 'VM', links } = Astro.props;
+---
+
+<header class="header">
+  <div class="header-inner">
+    <a href="#home" class="brand" title="home">{brandLabel}</a>
+    <nav class="nav">
+      <ul class="ul nav-list">
+        {
+          links.map((link) => (
+            <li class="li">
+              <a href={link.href} title={link.title} class="a">{link.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

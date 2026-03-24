@@ -1,0 +1,44 @@
+---
+import type { EducationItem } from '../../data/home';
+
+interface Props {
+  items: EducationItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="section education-section" id="educacion">
+  <h2 class="h2">Education & Certifications</h2>
+  <p class="p">
+    Academic background and certifications that support my backend and software engineering work.
+  </p>
+  <div class="education-list">
+    {
+      items.map((item) => (
+        <article class="education-item">
+          <span class="education-badge">{item.badge}</span>
+          <div class="education-content">
+            <h3>{item.title}</h3>
+            <p class="education-org">{item.org}</p>
+            <p class="education-date">{item.date}</p>
+            <a
+              href={item.pdfHref}
+              class={`education-preview ${item.previewClass}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={item.ariaLabel}
+            >
+              <img
+                src={item.thumbSrc}
+                class="education-thumb"
+                alt={item.thumbAlt}
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

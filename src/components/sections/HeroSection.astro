@@ -1,0 +1,49 @@
+---
+import type { HeroData } from '../../data/home';
+
+interface Props {
+  hero: HeroData;
+}
+
+const { hero } = Astro.props;
+---
+
+<section class="section info" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">{hero.eyebrow}</p>
+    <h2 class="h2">{hero.name}</h2>
+    <h3 class="h3">{hero.role}</h3>
+    <p class="hero-description">{hero.description}</p>
+    <div class="hero-actions">
+      <a
+        href={hero.cvHref}
+        class="hero-link hero-link-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View CV
+      </a>
+      <a
+        href={hero.githubHref}
+        class="hero-link hero-link-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+      <a
+        href={hero.linkedinHref}
+        class="hero-link hero-link-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="photo-placeholder">
+      <img src={hero.photoSrc} alt={hero.photoAlt} />
+    </div>
+  </div>
+</section>

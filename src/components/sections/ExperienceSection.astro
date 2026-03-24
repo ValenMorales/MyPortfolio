@@ -1,0 +1,36 @@
+---
+import type { ExperienceItem } from '../../data/home';
+
+interface Props {
+  items: ExperienceItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="section projects" id="experiencia">
+  <h2 class="h2">Experience</h2>
+  <p class="p">
+    Professional experience focused on backend engineering, integrations, and software quality in
+    production and AI training environments.
+  </p>
+  <div class="experience-timeline">
+    {
+      items.map((item) => (
+        <article class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span>{item.period}</span>
+            </div>
+            <h3>{item.role}</h3>
+            <h4>{item.company}</h4>
+            <ul class="timeline-points">
+              {item.points.map((point) => <li>{point}</li>)}
+            </ul>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>
