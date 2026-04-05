@@ -6,11 +6,14 @@ interface Props {
 }
 
 const { hero } = Astro.props;
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
 
 const withBase = (href: string) => {
   if (/^(https?:)?\/\//.test(href)) return href;
   if (!href.startsWith('/')) return href;
-  return `${import.meta.env.BASE_URL}${href.slice(1)}`;
+  if (href.startsWith(base)) return href;
+  return `${base}${href.slice(1)}`;
 };
 ---
 

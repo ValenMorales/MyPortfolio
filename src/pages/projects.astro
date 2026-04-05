@@ -1,13 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const base = import.meta.env.BASE_URL;
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
 ---
 
 <BaseLayout
   title="Projects"
   description="Additional project details and galleries."
-  stylesheets={[`${base}css/projects.css`]}
+  stylesheets={['/css/projects.css']}
 >
   <main>
     <section class="project">
