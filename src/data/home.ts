@@ -69,7 +69,7 @@ export const heroData: HeroData = {
   name: 'Valentina Morales',
   role: 'Software Engineer / Backend Developer',
   description:
-    'I build reliable backend services, API integrations, and automation workflows for production systems and AI-focused engineering tasks.',
+    'I design backend architectures, ship cloud deployments, and build AI-powered automations that help businesses move faster, from system design to production.',
   cvHref: '/CV_Valentina_Morales_Sanchez_go_and_python.pdf',
   githubHref: 'https://github.com/ValenMorales',
   linkedinHref: 'https://www.linkedin.com/in/valentina-morales-sanchez-a1916a1b6/',
