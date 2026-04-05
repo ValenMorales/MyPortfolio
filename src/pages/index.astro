@@ -19,12 +19,14 @@ import {
   educationItems,
   featuredProjects
 } from '../data/home';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
   title="Valentina Morales | Software Engineer"
   description="Portfolio of Valentina Morales, Software Engineer focused on backend development, automation, and integrations."
-  stylesheets={['/css/normalize.css', '/index.css', '/css/slider.css']}
+  stylesheets={[`${base}css/normalize.css`, `${base}index.css`, `${base}css/slider.css`]}
 >
   <Header links={navLinks} />
   <main class="main">
@@ -42,7 +44,7 @@ import {
   </main>
   <Footer />
 
-  <script slot="scripts" is:inline src="/app.js"></script>
+  <script slot="scripts" is:inline src={`${base}app.js`}></script>
   <script slot="scripts" is:inline type="text/javascript">
     (function(d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];

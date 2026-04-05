@@ -6,6 +6,12 @@ interface Props {
 }
 
 const { items } = Astro.props;
+
+const withBase = (href: string) => {
+  if (/^(https?:)?\/\//.test(href)) return href;
+  if (!href.startsWith('/')) return href;
+  return `${import.meta.env.BASE_URL}${href.slice(1)}`;
+};
 ---
 
 <section class="my-projects" id="proyectos">
@@ -18,7 +24,7 @@ const { items } = Astro.props;
     {
       items.map((project) => (
         <article class="project-card">
-          <img src={project.imageSrc} alt={project.imageAlt} />
+          <img src={withBase(project.imageSrc)} alt={project.imageAlt} />
           <div class="project-card-body">
             <h3>{project.title}</h3>
             <p>{project.description}</p>
@@ -27,7 +33,7 @@ const { items } = Astro.props;
             </ul>
             <div class="project-links">
               <a href={project.codeHref} target="_blank" rel="noopener noreferrer">Code</a>
-              {project.detailsHref && <a href={project.detailsHref}>Details</a>}
+              {project.detailsHref && <a href={withBase(project.detailsHref)}>Details</a>}
             </div>
           </div>
         </article>

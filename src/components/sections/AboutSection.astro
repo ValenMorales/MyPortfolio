@@ -9,6 +9,7 @@ interface Props {
 }
 
 const { lead, paragraphs, highlights, skills } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <section class="section about" id="about">
@@ -19,7 +20,7 @@ const { lead, paragraphs, highlights, skills } = Astro.props;
       {paragraphs.map((text) => <p class="about-text">{text}</p>)}
       <div class="about-actions">
         <a
-          href="/CV_Valentina_Morales_Sanchez_go_and_python.pdf"
+          href={`${base}CV_Valentina_Morales_Sanchez_go_and_python.pdf`}
           class="hero-link hero-link-primary"
           target="_blank"
           rel="noopener noreferrer"
