@@ -12,6 +12,13 @@ const { brandLabel = 'VM', links } = Astro.props;
 <header class="header">
   <div class="header-inner">
     <a href="#home" class="brand" title="home">{brandLabel}</a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="nav">
       <ul class="ul nav-list">
         {
@@ -25,3 +32,23 @@ const { brandLabel = 'VM', links } = Astro.props;
     </nav>
   </div>
 </header>
+
+<script is:inline>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav    = document.querySelector('.nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav--open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.classList.toggle('nav-toggle--open', isOpen);
+    });
+    // cerrar al clickear un link
+    nav.querySelectorAll('.a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('nav--open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.classList.remove('nav-toggle--open');
+      });
+    });
+  }
+</script>
