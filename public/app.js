@@ -1,3 +1,38 @@
+/* ── Scroll reveal ───────────────────────────────────────────────
+   Añade la clase .visible cuando un elemento entra al viewport.
+   Los elementos arrancan con opacity:0 + translateY(40px) via CSS
+   y transicionan suavemente al hacerse visibles.
+──────────────────────────────────────────────────────────────── */
+(function initScrollReveal() {
+  const targets = document.querySelectorAll(
+    '.section, .my-projects, .contact-section, ' +
+    '.timeline-item, .education-item, .project-card, ' +
+    '.about-card, .skills-group, .contact-info, .contact-form-wrap'
+  );
+
+  if (!targets.length || !('IntersectionObserver' in window)) {
+    targets.forEach(el => el.classList.add('visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
+  );
+
+  targets.forEach((el, i) => {
+    el.style.transitionDelay = `${(i % 4) * 80}ms`;
+    observer.observe(el);
+  });
+})();
+
 const items = document.querySelectorAll('.slider .list .item');
 const next = document.getElementById('next');
 const prev = document.getElementById('prev');
